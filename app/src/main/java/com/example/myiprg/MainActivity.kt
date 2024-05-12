@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
             if (duration != null && duration > 0) {
                 val hours = duration / 60
                 val minutes = duration - (hours * 60)
-                val cost = 400 * (hours + minutes)+(minutes*1)
+                val cost = 400 * hours + minutes
 
                 resulttextView.text = "Hours: $hours, Minutes: $minutes, Total Cost: R$cost"
             } else {
